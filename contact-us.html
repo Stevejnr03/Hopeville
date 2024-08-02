@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Img/hope-favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script defer src="Js/script.js"></script>
+  <title>Hopeville Eye Clinic</title>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <img class="preloader-img" src="Img/hope-favicon.png" />
+  </div>
+
+  <main class="content">
+    <!-- HEADER -->
+
+    <header id="header" class="header">
+      <div>
+        <a class="hopeville-logo" href="index.html">
+          <img class="logo" src="Img/hope-logo.png" />
+        </a>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul class="main-nav-links">
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link drop-down" href="#">About us
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links about-sub-links">
+              <li><a class="sub-link" href="about-us.html">Who We Are</a></li>
+              <li><a class="sub-link service-drop drop-down" href="#">Services
+                  <i class="nav-chev-right fa fa-chevron-right" aria-hidden="true"></i>
+                  <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class=" service-sub-links">
+                  <li><a class="sub-link" href="service-1.html">Comprehensive Ocular Test</a></li>
+                  <li><a class="sub-link" href="service-2.html">Surgery Co-management</a></li>
+                  <li><a class="sub-link" href="service-3.html">Intensive Eyecare</a></li>
+                  <li><a class="sub-link" href="service-4.html">Ocular Dry Prescription</a></li>
+                  <li><a class="sub-link" href="service-5.html">Ocular Disease Treatment</a></li>
+                  <li><a class="sub-link" href="service-6.html">Contact Lenses Practice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="link drop-down" href="#">Shop
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links shop-sub-links">
+              <li><a class="sub-link" href="shop.html">Frames</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="news.html">Blogs</a></li>
+          <li><a class="link" href="contact-us.html">Contact us</a></li>
+          <li onclick="openAppointment()"><a class="cta-link" href="appointment.html">Book appointment</a></li>
+        </ul>
+        <form class="search" action="https://hopevilleclinic.com/" method="get">
+          <input id="serach-text" placeholder="Search">
+        </form>
+      </nav>
+
+      <button onclick="openClose()" class="btn-mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" id="open-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </header>
+
+
+    <section class="page-img-box" style=" background-image: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1)
+          ),
+          url('Img/about-us-head-img.png');">
+      <div class="page-heading container text-align-left">
+        <h2 class="heading-secondary">Contact Us</h2>
+        <div class="page-heading-links">
+          <a class="page-heading-link" href="index.html">Home</a>
+          <i class="chev fa fa-chevron-right" aria-hidden="true"></i>
+          <span class="link-text">Contact Us</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section-1" data-aos="fade-up">
+      <div class="contact-section-1-contents grid grid--3-cols container">
+        <div class="contact-section-1-content">
+          <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i>
+          <p class="contact-heading">Address</p>
+          <p class="contact-text">#66 Alcon Road, Woji</p>
+          <p class="contact-text">Port-Harcourt, Rivers.</p>
+        </div>
+        <div class="contact-section-1-content contact-border">
+          <i class="contact-icon fa fa-phone" aria-hidden="true"></i>
+          <p class="contact-heading">Contact</p>
+          <p class="contact-text">+234 813 330 0378</p>
+          <p class="contact-text">Hopeville@Yahoo.com</p>
+        </div>
+        <div class="contact-section-1-content">
+          <i class="contact-icon fa fa-clock-o" aria-hidden="true"></i>
+          <p class="contact-heading">Office Hours</p>
+          <p class="contact-text">Monday-Friday 9AM-5PM</p>
+          <p class="contact-text">Saturday 10AM-3PM</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-section-2">
+
+      <div class="contact grid grid--2-cols container">
+        <div data-aos="fade-right">
+          <div class="map-heading">
+            <p class="subheading text-align-left">Keep In Touch With Us</p>
+            <p class="heading-secondary text-align-left">Get Connected With Us</p>
+          </div>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit harum recusandae id est
+            atque vel explicabo, qui mollitia voluptatum laborum quis numquam, non consequuntur magnam ipsum modi
+            excepturi inventore.</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.726499254334!2d7.056218173494145!3d4.816954440641866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd06ec517d1d%3A0x5a078bde67a920b3!2sHopeville%20Eye%20Clinic%20Ltd%20~%20Specialist%20Eye%20Care%2C%20Designer%20Optical%20and%20Sunglasses%2C%20Eye%20tests%2FSurgery%2C%20Photochromic%20Lenses%2C%20.!5e0!3m2!1sen!2sng!4v1720193291936!5m2!1sen!2sng"
+            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div data-aos="fade-left">
+          <div class="head-hide">
+            <p class="subheading">Here For You</p>
+            <h2 class="heading-secondary">Reach Out to Us</h2>
+          </div>
+          <form class="contact-form" action="#">
+            <div class="input-field">
+              <div>
+                <input id="full-name" type="text" placeholder="Full Name*" required />
+              </div>
+
+              <div>
+                <input id="phone" type="text" placeholder="Phone*" required />
+              </div>
+
+              <div>
+                <input id="email" type="email" placeholder="Email*" required />
+              </div>
+
+              <div>
+                <input id="date" type="text" placeholder="Subject*" required />
+              </div>
+            </div>
+
+            <div class="contact-message">
+              <textarea id="message" type="text" placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="contact-btn-box">
+              <button class="contact-btn btn-2">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" data-aos="fade-up">
+      <div class="container text-align-center">
+        <p class="subheading">Frequently asked questions</p>
+        <p class="heading-secondary">Do you have any question ?</p>
+      </div>
+
+      <div class="wrapper container grid grid--2-cols">
+        <div>
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              What are your office hours?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or
+                other email tabs if it's not in your inbox).
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your
+                CodePen account.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="stats-img-box" role="img" aria-label="">
+        <div class="stats container" data-aos="zoom-in">
+
+          <div id="counter" class="stat">
+            <ion-icon class="stats-icon" name="watch-outline"></ion-icon>
+            <p class="stats-name">combined</p>
+            <div class="counter-value stats-number" data-count="40"></div>
+            <p class="stats-name">years experience</p>
+          </div>
+
+          <div id="counter" class="stat">
+            <ion-icon class="stats-icon" name="person-outline"></ion-icon>
+            <p class="stats-name">over</p>
+            <div class="counter-value stats-number" data-count="3000"></div>
+            <p class="stats-name">patients</p>
+          </div>
+
+          <div id="counter" class="stat">
+            <ion-icon class="stats-icon" name="watch-outline"></ion-icon>
+            <p class="stats-name">over</p>
+            <div class="counter-value stats-number" data-count="500"></div>
+            <p class="stats-name">positive reviews</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-contents container" data-aos="fade-up">
+        <div class="footer-content footer-description ">
+          <a class="footer-logo" href="#">
+            <img class="f-logo" src="Img/hope-logo.png" />
+          </a>
+
+          <p class="address">Hopeville eye clinic is a specialist
+            eye and vision care centre which has been serving
+            and providing excellent visual eye care services
+            for the Woji area and all of Port-Harcourt
+            environs in over 10years.</p>
+        </div>
+
+        <div class="footer-content footer-contact">
+          <p class="footer-heading">Contact information</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><i class="footer-icon fa fa-map-marker" aria-hidden="true"></i><span class="address">#66 Alcon Road,
+                Woji. Port-Harcourt</span></li>
+            <li><i class="footer-icon fa fa-envelope-o" aria-hidden="true"></i><a class="footer-info-link"
+                href="mailto:hopeville@yahoo.com">hopeville@yahoo.com</a></li>
+            <li><i class="footer-icon fa fa-phone" aria-hidden="true"></i><a class="footer-info-link"
+                href="tel:08037091387">08037091387</a></li>
+            <li><i class="footer-icon fa fa-clock-o" aria-hidden="true"></i><span class="address">8:00am - 5:30pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content quick-link">
+          <p class="footer-heading">Quick Links</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="index.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Home</a></li>
+            <li><a class="footer-link" href="about-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>About Us</a></li>
+            <li><a class="footer-link" href="contact-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Contact Us</a></li>
+            <li><a class="footer-link" href="shop.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Shop</a></li>
+            <li><a class="footer-link" href="appointment.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <p class="footer-heading">Subscribe Newsletter</p>
+          <div class="line"></div>
+          <div class="news-letter">
+            <input class="news-letter-form" id="email" type="email" placeholder="Email*" required />
+          </div>
+
+          <button class="sub-btn">Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        <p>Copyright © 2024 Hopeville Eye Clinic</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/hopevilleeyeclinic?igsh=MXVweXF3dXJ0dTU1eg%3D%3D&utm_source=qr"><i
+              class="social-icon head-1-icon fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/share/Sf8r3HwyYcqgry4J/?mibextid=LQQJ4d"><i
+              class="social-icon head-1-icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="social-icon head-1-icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const questions = document.querySelectorAll(".question");
+
+      questions.forEach(question => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const isActive = question.classList.contains("active");
+
+          // Close all answers
+          questions.forEach(q => {
+            if (q !== question) {
+              q.classList.remove("active");
+              q.nextElementSibling.style.maxHeight = 0;
+            }
+          });
+
+          // Toggle active class and adjust max-height
+          question.classList.toggle("active");
+          if (!isActive) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          } else {
+            answer.style.maxHeight = 0;
+          }
+        });
+      });
+    });
+
+
+    // STATS COUNTER
+
+    var a = 0;
+    $(window).scroll(function () {
+
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function () {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+            countNum: countTo
+          },
+
+            {
+
+              duration: 3000,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $this.text(this.countNum);
+                //alert('finished');
+              }
+
+            });
+        });
+        a = 1;
+      }
+
+    });
+
+    // sticky navigation
+
+    AOS.init();
+
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      var hero = document.querySelector('.header');
+      var heroHeight = hero.offsetHeight;
+
+      if (window.scrollY > heroHeight) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Img/hope-favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+
+
+  <script defer src="Js/script.js"></script>
+  <title>Hopeville Eye Clinic</title>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <img class="preloader-img" src="Img/hope-favicon.png" />
+  </div>
+
+  <main class="content">
+
+    <!-- HEADER -->
+
+    <header id="header" class="header">
+      <div>
+        <a class="hopeville-logo" href="index.html">
+          <img class="logo" src="Img/hope-logo.png" />
+        </a>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul class="main-nav-links">
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link drop-down" href="#">About us
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links about-sub-links">
+              <li><a class="sub-link" href="about-us.html">Who We Are</a></li>
+              <li><a class="sub-link service-drop drop-down" href="#">Services
+                  <i class="nav-chev-right fa fa-chevron-right" aria-hidden="true"></i>
+                  <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class=" service-sub-links">
+                  <li><a class="sub-link" href="service-1.html">Comprehensive Ocular Test</a></li>
+                  <li><a class="sub-link" href="service-2.html">Surgery Co-management</a></li>
+                  <li><a class="sub-link" href="service-3.html">Intensive Eyecare</a></li>
+                  <li><a class="sub-link" href="service-4.html">Ocular Dry Prescription</a></li>
+                  <li><a class="sub-link" href="service-5.html">Ocular Disease Treatment</a></li>
+                  <li><a class="sub-link" href="service-6.html">Contact Lenses Practice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="link drop-down" href="#">Shop
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links shop-sub-links">
+              <li><a class="sub-link" href="shop.html">Frames</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="news.html">Blogs</a></li>
+          <li><a class="link" href="contact-us.html">Contact us</a></li>
+          <li onclick="openAppointment()"><a class="cta-link" href="appointment.html">Book appointment</a></li>
+        </ul>
+        <form class="search" action="https://hopevilleclinic.com/" method="get">
+          <input id="serach-text" placeholder="Search">
+        </form>
+      </nav>
+
+      <button onclick="openClose()" class="btn-mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" id="open-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </header>
+
+    <section class="cart-section">
+
+      <div class="container cart-heading">
+        <h2 class="heading-secondary">Cart</h2>
+        <div class="service-heading-box">
+          <div class="service-heading-underline"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cart-notification empty-cart-notification">
+          <div class="cart-notify-text">
+            <i class="cart-notification-icon fa fa-shopping-cart" aria-hidden="true"></i>
+            <p class="text">Your cart is currently empty.</p>
+          </div>
+          <a class="btn-2" href="shop.html">Go to shop</a>
+        </div>
+
+
+        <div class="cart-contents">
+          <div class="cart-content">
+            <h3 class="heading-tertiary">Items</h3>
+            <div class="cart-item">
+              <div class="item-description">
+                <div class="cart-item-img-box">
+                  <img class="cart-item-img" src="Img/shop-4.jpg" />
+                </div>
+                <a class="shop-product-link" href="product.html">Photochromic Sunglasses By Tommy Hillfiger</a>
+                <button class="remove-btn">
+                  <ion-icon class="remove-icon" name="trash-outline"></ion-icon>
+                  <p class="text">Remove</p>
+                </button>
+              </div>
+
+              <div class="item-price-box">
+                <p class="item-price">&#8358; 32,950</p>
+                <p class="old-price mini-text">&#8358; 20,950</p>
+                <div class="product-quantity">
+                  <input id="quantity" class="quantity-input quantity__input" name="quantity" value="1"
+                    aria-label="Product quantity" readonly>
+                  <div class="product-nav">
+                    <div class="product-increase quantity__plus"><ion-icon name="chevron-up-outline"></ion-icon></div>
+                    <div class="product-decrease quantity__minus"><ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-description">
+                <div class="cart-item-img-box">
+                  <img class="cart-item-img" src="Img/shop-6.jpg" />
+                </div>
+                <a class="shop-product-link" href="product.html">Photochromic Sunglasses By Off White</a>
+                <button class="remove-btn">
+                  <ion-icon class="remove-icon" name="trash-outline"></ion-icon>
+                  <p class="text">Remove</p>
+                </button>
+              </div>
+
+              <div class="item-price-box">
+                <p class="item-price">&#8358; 42,950</p>
+                <p class="old-price mini-text">&#8358; 20,950</p>
+                <div class="product-quantity">
+                  <input id="quantity" class="quantity-input quantity__input" name="quantity" value="1"
+                    aria-label="Product quantity" readonly>
+                  <div class="product-nav">
+                    <div class="product-increase quantity__plus"><ion-icon name="chevron-up-outline"></ion-icon></div>
+                    <div class="product-decrease quantity__minus"><ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cart-summary">
+            <p class="text">Cart Summary</p>
+            <div class="sub-total">
+              <p class="mini-text">Subtotal</p>
+              <p class="sum-naira">&#8358; <span class="total-price"> 63,900</span></p>
+            </div>
+            <div class="btn-2-box">
+              <a class="btn-2" href="check-out.html">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-contents container">
+        <div class="footer-content footer-description ">
+          <a class="footer-logo" href="#">
+            <img class="f-logo" src="Img/hope-logo.png" />
+          </a>
+
+          <p class="address">Hopeville eye clinic is a specialist
+            eye and vision care centre which has been serving
+            and providing excellent visual eye care services
+            for the Woji area and all of Port-Harcourt
+            environs in over 10years.</p>
+        </div>
+
+        <div class="footer-content footer-contact">
+          <p class="footer-heading">Contact information</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><i class="footer-icon fa fa-map-marker" aria-hidden="true"></i><span class="address">#66 Alcon Road,
+                Woji. Port-Harcourt</span></li>
+            <li><i class="footer-icon fa fa-envelope-o" aria-hidden="true"></i><a class="footer-info-link"
+                href="mailto:hopeville@yahoo.com">hopeville@yahoo.com</a></li>
+            <li><i class="footer-icon fa fa-phone" aria-hidden="true"></i><a class="footer-info-link"
+                href="tel:08037091387">08037091387</a></li>
+            <li><i class="footer-icon fa fa-clock-o" aria-hidden="true"></i><span class="address">8:00am - 5:30pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content quick-link">
+          <p class="footer-heading">Quick Links</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="Home"><i class="chev fa fa-chevron-right" aria-hidden="true"></i>Home</a>
+            </li>
+            <li><a class="footer-link" href="about-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>About Us</a></li>
+            <li><a class="footer-link" href="contact-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Contact Us</a></li>
+            <li><a class="footer-link" href="shop.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Shop</a></li>
+            <li><a class="footer-link" href="appointment.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <p class="footer-heading">Subscribe Newsletter</p>
+          <div class="line"></div>
+          <div class="news-letter">
+            <input class="news-letter-form" id="email" type="email" placeholder="Email*" required />
+          </div>
+
+          <button class="sub-btn">Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        <p>Copyright © 2024 Hopeville Eye Clinic</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/hopevilleeyeclinic?igsh=MXVweXF3dXJ0dTU1eg%3D%3D&utm_source=qr"><i
+              class="social-icon head-1-icon fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/share/Sf8r3HwyYcqgry4J/?mibextid=LQQJ4d"><i
+              class="social-icon head-1-icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="social-icon head-1-icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+
+    // PRODUCT INCREAMENT AND DECREAMENT SCRIPT
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+      function updateTotalPrice() {
+        const totalPriceElement = document.querySelector(".total-price");
+        let totalPrice = 0;
+
+        document.querySelectorAll('.cart-item').forEach(item => {
+          const itemPriceElement = item.querySelector('.item-price');
+          const quantityInput = item.querySelector('.quantity-input');
+
+          // Extract numerical values
+          let itemPrice = parseInt(itemPriceElement.textContent.replace(/[^\d]/g, ''), 10);
+          let quantity = parseInt(quantityInput.value, 10);
+
+          // Default values if parsing fails
+          if (isNaN(itemPrice)) itemPrice = 0;
+          if (isNaN(quantity)) quantity = 0;
+
+          totalPrice += itemPrice * quantity;
+        });
+
+        // Update the total price display
+        totalPriceElement.textContent = totalPrice.toLocaleString();
+      }
+
+      function updateCart() {
+        // Update total price
+        updateTotalPrice();
+
+        // Check if cart is empty
+        const cartItems = document.querySelectorAll('.cart-item');
+        const emptyCartNotification = document.querySelector('.empty-cart-notification');
+        const cartContents = document.querySelector('.cart-contents');
+
+        if (cartItems.length === 0) {
+          emptyCartNotification.style.display = 'flex';
+          cartContents.style.display = 'none';
+        } else {
+          emptyCartNotification.style.display = 'none';
+          cartContents.style.display = 'grid';
+        }
+      }
+
+      function changeQuantity(event) {
+        event.preventDefault();
+        const button = event.target.closest('.product-increase, .product-decrease');
+        if (!button) return;
+
+        const quantityContainer = button.closest('.product-quantity');
+        const input = quantityContainer.querySelector('.quantity-input');
+        let quantity = parseInt(input.value, 10);
+
+        if (isNaN(quantity)) quantity = 1;
+
+        if (button.classList.contains('product-increase')) {
+          input.value = quantity + 1;
+        } else if (button.classList.contains('product-decrease')) {
+          input.value = Math.max(quantity - 1, 1);
+        }
+
+        updateTotalPrice();
+      }
+
+      function removeItem(event) {
+        event.preventDefault();
+        const button = event.target.closest('.remove-btn');
+        if (button) {
+          button.closest('.cart-item').remove();
+          updateCart();
+        }
+      }
+
+      document.querySelectorAll('.product-increase, .product-decrease').forEach(button => {
+        button.addEventListener('click', changeQuantity);
+      });
+
+      document.querySelectorAll('.remove-btn').forEach(button => {
+        button.addEventListener('click', removeItem);
+      });
+
+      // Initial cart update
+      updateCart();
+    });
+
+    AOS.init();
+
+    // Sticky navigation
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('header');
+      const hero = document.querySelector('.header');
+      const heroHeight = hero.offsetHeight;
+
+      if (window.scrollY > heroHeight) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

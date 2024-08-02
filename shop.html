@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Img/hope-favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+
+
+  <script defer src="Js/script.js"></script>
+  <title>Hopeville Eye Clinic</title>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <img class="preloader-img" src="Img/hope-favicon.png" />
+  </div>
+
+  <main class="content">
+
+    <!-- HEADER -->
+
+    <header id="header" class="header">
+      <div>
+        <a class="hopeville-logo" href="index.html">
+          <img class="logo" src="Img/hope-logo.png" />
+        </a>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul class="main-nav-links">
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link drop-down" href="#">About us
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links about-sub-links">
+              <li><a class="sub-link" href="about-us.html">Who We Are</a></li>
+              <li><a class="sub-link service-drop drop-down" href="#">Services
+                  <i class="nav-chev-right fa fa-chevron-right" aria-hidden="true"></i>
+                  <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class=" service-sub-links">
+                  <li><a class="sub-link" href="service-1.html">Comprehensive Ocular Test</a></li>
+                  <li><a class="sub-link" href="service-2.html">Surgery Co-management</a></li>
+                  <li><a class="sub-link" href="service-3.html">Intensive Eyecare</a></li>
+                  <li><a class="sub-link" href="service-4.html">Ocular Dry Prescription</a></li>
+                  <li><a class="sub-link" href="service-5.html">Ocular Disease Treatment</a></li>
+                  <li><a class="sub-link" href="service-6.html">Contact Lenses Practice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="link drop-down" href="#">Shop
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links shop-sub-links">
+              <li><a class="sub-link" href="shop.html">Frames</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="news.html">Blogs</a></li>
+          <li><a class="link" href="contact-us.html">Contact us</a></li>
+          <li onclick="openAppointment()"><a class="cta-link" href="appointment.html">Book appointment</a></li>
+        </ul>
+        <form class="search" action="https://hopevilleclinic.com/" method="get">
+          <input id="serach-text" placeholder="Search">
+        </form>
+      </nav>
+
+      <button onclick="openClose()" class="btn-mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" id="open-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </header>
+
+
+    <section class="shop-page-section">
+      <div class="shop container">
+        <div class="shop-category-links-contents">
+          <ul class="shop-category-links">
+            <li><a href="product-category.html" class="shop-category-link">Aspheric</a></li>
+            <li><a href="product-category.html" class="shop-category-link">High Index Plastic</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Photochromic</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Monogram Titanium</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Blue Light </a></li>
+            <li><a href="product-category.html" class="shop-category-link">Anti-Reflective </a></li>
+            <li><a href="product-category.html" class="shop-category-link">Kids' Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Men's Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Women's Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Unisex Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Reading Glasses</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Sports Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Safety Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Wayfarer </a></li>
+            <li><a href="product-category.html" class="shop-category-link">Round Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Polarized</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Titanium Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Aviator Frames</a></li>
+            <li><a href="product-category.html" class="shop-category-link">Polycarbonate</a></li>
+          </ul>
+        </div>
+
+        <div class="shop-container">
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-2.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-5.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-1.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-3.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-6.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-1.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-3.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-7.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-2.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-4.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-1.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+
+          <div class="shop-content">
+            <div>
+              <a href="product.html" class="shop-img-box">
+                <img class="shop-img" src="Img/shop-5.jpg" />
+                <div class="shop-overlay"></div>
+              </a>
+            </div>
+
+            <div class="shop-text-box">
+              <a class="shop-product-link" href="product.html">Sunglass</a>
+              <div class="product-underline"></div>
+              <p class="product-price old-price">&#8358;480,000</p>
+              <p class="product-price">&#8358;450,000</p>
+              <!-- <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add TO Cart</button> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-widget">
+          <a class="cart-link" href="cart.html">
+            <ion-icon name="cart-outline"></ion-icon>
+          </a>
+          <span class="number-of-items">
+            0
+          </span>
+        </div>
+
+        <div class="paginations">
+          <button class="pagination-left pag">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <a href="#" class="pagination pag">1</a>
+          <a href="#" class="pagination pag">2</a>
+          <a href="#" class="pagination pag">3</a>
+          <span href="#" class="pagination-dots">...</span>
+          <a href="#" class="pagination pag">4</a>
+          <button class="pagination-right pag">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-contents container">
+        <div class="footer-content footer-description ">
+          <a class="footer-logo" href="#">
+            <img class="f-logo" src="Img/hope-logo.png" />
+          </a>
+
+          <p class="address">Hopeville eye clinic is a specialist
+            eye and vision care centre which has been serving
+            and providing excellent visual eye care services
+            for the Woji area and all of Port-Harcourt
+            environs in over 10years.</p>
+        </div>
+
+        <div class="footer-content footer-contact">
+          <p class="footer-heading">Contact information</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><i class="footer-icon fa fa-map-marker" aria-hidden="true"></i><span class="address">#66 Alcon Road,
+                Woji. Port-Harcourt</span></li>
+            <li><i class="footer-icon fa fa-envelope-o" aria-hidden="true"></i><a class="footer-info-link"
+                href="mailto:hopeville@yahoo.com">hopeville@yahoo.com</a></li>
+            <li><i class="footer-icon fa fa-phone" aria-hidden="true"></i><a class="footer-info-link"
+                href="tel:08037091387">08037091387</a></li>
+            <li><i class="footer-icon fa fa-clock-o" aria-hidden="true"></i><span class="address">8:00am - 5:30pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content quick-link">
+          <p class="footer-heading">Quick Links</p>
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="index.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Home</a></li>
+            <li><a class="footer-link" href="about-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>About Us</a></li>
+            <li><a class="footer-link" href="contact-us.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Contact Us</a></li>
+            <li><a class="footer-link" href="shop.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Shop</a></li>
+            <li><a class="footer-link" href="appointment.html"><i class="chev fa fa-chevron-right"
+                  aria-hidden="true"></i>Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <p class="footer-heading">Subscribe Newsletter</p>
+          <div class="line"></div>
+          <div class="news-letter">
+            <input class="news-letter-form" id="email" type="email" placeholder="Email*" required />
+          </div>
+
+          <button class="sub-btn">Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        <p>Copyright © 2024 Hopeville Eye Clinic</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/hopevilleeyeclinic?igsh=MXVweXF3dXJ0dTU1eg%3D%3D&utm_source=qr"><i
+              class="social-icon head-1-icon fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/share/Sf8r3HwyYcqgry4J/?mibextid=LQQJ4d"><i
+              class="social-icon head-1-icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="social-icon head-1-icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+
+    // sticky navigation
+
+    AOS.init();
+
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      var hero = document.querySelector('.header');
+      var heroHeight = hero.offsetHeight;
+
+      if (window.scrollY > heroHeight) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+
+  </script>
+</body>
+
+</html>

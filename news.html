@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Img/hope-favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script defer src="Js/script.js"></script>
+  <title>Hopeville Eye Clinic</title>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <img class="preloader-img" src="Img/hope-favicon.png" />
+  </div>
+
+  <main class="content">
+    <!-- HEADER -->
+
+    <header id="header" class="header">
+      <div>
+        <a class="hopeville-logo" href="index.html">
+          <img class="logo" src="Img/hope-logo.png" />
+        </a>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul class="main-nav-links">
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link drop-down" href="#">About us
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links about-sub-links">
+              <li><a class="sub-link" href="about-us.html">Who We Are</a></li>
+              <li><a class="sub-link service-drop drop-down" href="#">Services
+                  <i class="nav-chev-right fa fa-chevron-right" aria-hidden="true"></i>
+                  <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class=" service-sub-links">
+                  <li><a class="sub-link" href="service-1.html">Comprehensive Ocular Test</a></li>
+                  <li><a class="sub-link" href="service-2.html">Surgery Co-management</a></li>
+                  <li><a class="sub-link" href="service-3.html">Intensive Eyecare</a></li>
+                  <li><a class="sub-link" href="service-4.html">Ocular Dry Prescription</a></li>
+                  <li><a class="sub-link" href="service-5.html">Ocular Disease Treatment</a></li>
+                  <li><a class="sub-link" href="service-6.html">Contact Lenses Practice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="link drop-down" href="#">Shop
+              <i class="nav-chev-down fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub-links shop-sub-links">
+              <li><a class="sub-link" href="shop.html">Frames</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="news.html">Blogs</a></li>
+          <li><a class="link" href="contact-us.html">Contact us</a></li>
+          <li onclick="openAppointment()"><a class="cta-link" href="appointment.html">Book appointment</a></li>
+        </ul>
+        <form class="search" action="https://hopevilleclinic.com/" method="get">
+          <input id="serach-text" placeholder="Search">
+        </form>
+      </nav>
+
+      <button onclick="openClose()" class="btn-mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" id="open-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-nav" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="icon-mobile-nav w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </header>
+
+
+    <body>
+      <section class="page-img-box" style=" background-image: linear-gradient(to right bottom,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
+        ),
+        url('Img/about-us-head-img.png');">
+        <div class="page-heading container text-align-left">
+          <h2 class="heading-secondary">News and Updates</h2>
+          <div class="page-heading-links">
+            <a class="page-heading-link" href="index.html">Home</a>
+            <i class="chev fa fa-chevron-right" aria-hidden="true"></i>
+            <span class="link-text">Blogs</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="blog-container">
+        <article class="container">
+          <section class="blog-section-1" data-aos="fade-up">
+            <div class="blog-section-1-contents">
+              <div class="blog-section-1-content">
+                <div class="blog-section-1-img-box">
+                  <img class="blog-section-1-img" src="Img/post-4-img.jpg" />
+                </div>
+                <div>
+                  <h3 class="heading-tertiary text-align-left blog-heading"><a href="blog-single.html"
+                      class="blog-main-link">Celebrating 18 Years of Distinction</a></h3>
+                  <p class="text">Posted March 03, 2024 by <span class="blog-poster">Dr.Jeremy Smith</span></p>
+                </div>
+                <p class="text">Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo. Velna vitae
+                  auctor congue magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sem
+                  sagittis.</p>
+              </div>
+
+              <div class="blog-section-1-content" data-aos="fade-up">
+                <div class="blog-section-1-img-box">
+                  <img class="blog-section-1-img" src="Img/post-4-img.jpg" />
+                </div>
+                <div>
+                  <h3 class="heading-tertiary text-align-left blog-heading"><a href="blog-single.html"
+                      class="blog-main-link">Celebrating 18 Years of Distinction</a></h3>
+                  <p class="text">Posted March 03, 2024 by <span class="blog-poster">Dr.Jeremy Smith</span></p>
+                </div>
+                <p class="text">Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo. Velna vitae
+                  auctor congue magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sem
+                  sagittis.</p>
+              </div>
+
+              <div class="blog-section-1-content" data-aos="fade-up">
+                <div class="blog-section-1-img-box">
+                  <img class="blog-section-1-img" src="Img/post-4-img.jpg" />
+                </div>
+                <div>
+                  <h3 class="heading-tertiary text-align-left blog-heading"><a href="blog-single.html"
+                      class="blog-main-link">Celebrating 18 Years of Distinction</a></h3>
+                  <p class="text">Posted March 03, 2024 by <span class="blog-poster">Dr.Jeremy Smith</span></p>
+                </div>
+                <p class="text">Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo. Velna vitae
+                  auctor congue magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sem
+                  sagittis.</p>
+              </div>
+
+              <div class="blog-section-1-content" data-aos="fade-up">
+                <div class="blog-section-1-img-box">
+                  <img class="blog-section-1-img" src="Img/post-4-img.jpg" />
+                </div>
+                <div>
+                  <h3 class="heading-tertiary text-align-left blog-heading"><a href="blog-single.html"
+                      class="blog-main-link">Celebrating 18 Years of Distinction</a></h3>
+                  <p class="text">Posted March 03, 2024 by <span class="blog-poster">Dr.Jeremy Smith</span></p>
+                </div>
+                <p class="text">Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo. Velna vitae
+                  auctor congue magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sem
+                  sagittis.</p>
+              </div>
+          </section>
+        </article>
+
+
+        <aside class="blog-section-4" data-aos="fade-up">
+          <form class="blog-search container" method="get">
+            <input id="blog-serach" placeholder="Search" />
+            <i class="fa fa-search blog-search-icon" aria-hidden="true"></i>
+          </form>
+
+
+          <div class="container category-content">
+            <h3 class="heading-tertiary blog-heading">Categories</h3>
+            <ul class="categories">
+              <li class="category"><a href="#" class="category-link">
+                  <i class="fa fa-chevron-right category-icon" aria-hidden="true"></i>
+                  All Categories</a>
+              </li>
+              <li class="category"><a href="#" class="category-link">
+                  <i class="fa fa-chevron-right category-icon" aria-hidden="true"></i>
+                  All Categories</a>
+              </li>
+              <li class="category"><a href="#" class="category-link">
+                  <i class="fa fa-chevron-right category-icon" aria-hidden="true"></i>
+                  All Categories</a>
+              </li>
+              <li class="category"><a href="#" class="category-link">
+                  <i class="fa fa-chevron-right category-icon" aria-hidden="true"></i>
+                  All Categories</a>
+              </li>
+              <li class="category"><a href="#" class="category-link">
+                  <i class="fa fa-chevron-right category-icon" aria-hidden="true"></i>
+                  All Categories</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container popular-posts">
+            <h3 class="heading-tertiary blog-heading">Popular Posts</h3>
+
+            <div class="popular-post" data-aos="fade-up">
+              <img class="popular-post-img" src="Img/post-author-4.jpg" />
+              <div>
+                <a class="popular-post-link" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                <p class="text">43 Comments</p>
+              </div>
+            </div>
+
+            <div class="popular-post" data-aos="fade-up">
+              <img class="popular-post-img" src="Img/post-author-3.jpg" />
+              <div>
+                <a class="popular-post-link" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                <p class="text">43 Comments</p>
+              </div>
+            </div>
+
+            <div class="popular-post" data-aos="fade-up">
+              <img class="popular-post-img" src="Img/post-author-4.jpg" />
+              <div>
+                <a class="popular-post-link" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                <p class="text">43 Comments</p>
+              </div>
+            </div>
+
+            <div class="tags-cloud" data-aos="fade-up">
+              <h3 class="heading-tertiary blog-heading">Tags Cloud</h3>
+              <div class="tags">
+                <a class="tag-link" href="#">Effective Treatment</a>
+                <a class="tag-link" href="#">Lifestyle</a>
+                <a class="tag-link" href="#">Diagnostic</a>
+                <a class="tag-link" href="#">Pediatrics</a>
+                <a class="tag-link" href="#">Lifestyle</a>
+                <a class="tag-link" href="#">Research</a>
+                <a class="tag-link" href="#">Pharma</a>
+                <a class="tag-link" href="#">Pediatrics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="eye-care-plan container" data-aos="fade-up">
+            <div class="eye-care-plan-img-box">
+              <img class="eye-care-plan-img" src="Img/eye-care-plan-img.png" />
+            </div>
+            <h3 class="heading-tertiary blog-heading">Need An EyeCare Plan?</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quasi error quod alias maiores, architecto expedita culpa numquam ut eos<span class="text-hide">
+                impedit corrupti animi in blanditiis, dolores dignissimos ab ratione
+                suscipit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum nesciunt incidunt repellendus est sunt beatae neque
+                tenetur nostrum tempore deleniti suscipit tempora, fuga
+                iusto perspiciatis totam pariatur sint, autem velit.</span></p>
+          </div>
+
+        </aside>
+
+        <div class="paginations">
+          <button class="pagination-left pag">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <a href="#" class="pagination pag">1</a>
+          <a href="#" class="pagination pag">2</a>
+          <a href="#" class="pagination pag">3</a>
+          <span href="#" class="pagination-dots">...</span>
+          <a href="#" class="pagination pag">4</a>
+          <button class="pagination-right pag">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+
+      <footer class="footer-section">
+        <div class="stats-img-box" role="img" aria-label="">
+          <div class="stats container" data-aos="zoom-in">
+
+            <div id="counter" class="stat">
+              <ion-icon class="stats-icon" name="watch-outline"></ion-icon>
+              <p class="stats-name">combined</p>
+              <div class="counter-value stats-number" data-count="40"></div>
+              <p class="stats-name">years experience</p>
+            </div>
+
+            <div id="counter" class="stat">
+              <ion-icon class="stats-icon" name="person-outline"></ion-icon>
+              <p class="stats-name">over</p>
+              <div class="counter-value stats-number" data-count="3000"></div>
+              <p class="stats-name">patients</p>
+            </div>
+
+            <div id="counter" class="stat">
+              <ion-icon class="stats-icon" name="watch-outline"></ion-icon>
+              <p class="stats-name">over</p>
+              <div class="counter-value stats-number" data-count="500"></div>
+              <p class="stats-name">positive reviews</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="footer-contents container" data-aos="fade-up">
+          <div class="footer-content footer-description ">
+            <a class="footer-logo" href="#">
+              <img class="f-logo" src="Img/hope-logo.png" />
+            </a>
+
+            <p class="address">Hopeville eye clinic is a specialist
+              eye and vision care centre which has been serving
+              and providing excellent visual eye care services
+              for the Woji area and all of Port-Harcourt
+              environs in over 10years.</p>
+          </div>
+
+          <div class="footer-content footer-contact">
+            <p class="footer-heading">Contact information</p>
+            <div class="line"></div>
+            <ul class="footer-list">
+              <li><i class="footer-icon fa fa-map-marker" aria-hidden="true"></i><span class="address">#66 Alcon Road,
+                  Woji. Port-Harcourt</span></li>
+              <li><i class="footer-icon fa fa-envelope-o" aria-hidden="true"></i><a class="footer-info-link"
+                  href="mailto:hopeville@yahoo.com">hopeville@yahoo.com</a></li>
+              <li><i class="footer-icon fa fa-phone" aria-hidden="true"></i><a class="footer-info-link"
+                  href="tel:08037091387">08037091387</a></li>
+              <li><i class="footer-icon fa fa-clock-o" aria-hidden="true"></i><span class="address">8:00am -
+                  5:30pm</span></li>
+            </ul>
+          </div>
+
+          <div class="footer-content quick-link">
+            <p class="footer-heading">Quick Links</p>
+            <div class="line"></div>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="index.html"><i class="chev fa fa-chevron-right"
+                    aria-hidden="true"></i>Home</a></li>
+              <li><a class="footer-link" href="about-us.html"><i class="chev fa fa-chevron-right"
+                    aria-hidden="true"></i>About Us</a></li>
+              <li><a class="footer-link" href="contact-us.html"><i class="chev fa fa-chevron-right"
+                    aria-hidden="true"></i>Contact Us</a></li>
+              <li><a class="footer-link" href="shop.html"><i class="chev fa fa-chevron-right"
+                    aria-hidden="true"></i>Shop</a></li>
+              <li><a class="footer-link" href="appointment.html"><i class="chev fa fa-chevron-right"
+                    aria-hidden="true"></i>Book Appointment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <p class="footer-heading">Subscribe Newsletter</p>
+            <div class="line"></div>
+            <div class="news-letter">
+              <input class="news-letter-form" id="email" type="email" placeholder="Email*" required />
+            </div>
+
+            <button class="sub-btn">Subscribe Now</button>
+          </div>
+        </div>
+
+        <div class="container copyright">
+          <p>Copyright © 2024 Hopeville Eye Clinic</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/hopevilleeyeclinic?igsh=MXVweXF3dXJ0dTU1eg%3D%3D&utm_source=qr"><i
+                class="social-icon head-1-icon fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/share/Sf8r3HwyYcqgry4J/?mibextid=LQQJ4d"><i
+                class="social-icon head-1-icon fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="social-icon head-1-icon fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </footer>
+  </main>
+  <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  </script>
+
+  <script>
+
+    // STATS COUNTER
+
+    var a = 0;
+    $(window).scroll(function () {
+
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function () {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+            countNum: countTo
+          },
+
+            {
+
+              duration: 3000,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $this.text(this.countNum);
+                //alert('finished');
+              }
+
+            });
+        });
+        a = 1;
+      }
+
+    });
+
+
+
+    // sticky navigation
+
+    AOS.init();
+
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      var hero = document.querySelector('.header');
+      var heroHeight = hero.offsetHeight;
+
+      if (window.scrollY > heroHeight) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+
+  </script>
+</body>
+
+</html>
