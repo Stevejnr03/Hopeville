@@ -556,7 +556,7 @@ header {
   background-image: linear-gradient(to right bottom,
       rgba(0, 98, 140, 0.356),
       rgba(0, 98, 140, 0.358)),
-    url("../img/appoint.png");
+    url("./img/appoint.png");
   background-size: cover;
   background-position: center;
   transform: translateX(-5rem);
