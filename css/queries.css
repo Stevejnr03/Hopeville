@@ -744,6 +744,7 @@
   .shop-container {
     grid-template-columns: 1fr;
     max-width: 450px;
+    padding: 0 2rem;
   }
 
   /* related product PAGE */
