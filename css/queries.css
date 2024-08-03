@@ -753,6 +753,7 @@
   .related-product-container {
     grid-template-columns: 1fr;
     max-width: 400px;
+    padding: 0 2.5rem;
   }
 
   .product-view-section-2 .heading-secondary {
