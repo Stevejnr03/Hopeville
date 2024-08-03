@@ -636,9 +636,9 @@
     padding: 5rem 2rem;
   }
 
-  .container {
+/*   .container {
     padding: 0 1.5rem;
-  }
+  } */
 
   .mini-contact {
     grid-template-columns: 1fr;
