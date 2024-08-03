@@ -636,9 +636,9 @@
     padding: 5rem 2rem;
   }
 
-/*   .container {
-    padding: 0 1.5rem;
-  } */
+  .container {
+    padding: 0 1.8rem;
+  }
 
   .mini-contact {
     grid-template-columns: 1fr;
@@ -745,6 +745,7 @@
     grid-template-columns: 1fr;
     max-width: 450px;
     padding: 0 2.5rem;
+
   }
 
   /* related product PAGE */
