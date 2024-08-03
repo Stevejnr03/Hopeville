@@ -741,10 +741,10 @@
 
 
   /* SHOP PAGE */
-  .shop-container {
+  .shop-container .container {
     grid-template-columns: 1fr;
     max-width: 450px;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 
   /* related product PAGE */
